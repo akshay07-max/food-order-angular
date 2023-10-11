@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center head">
+                    <h1>Food Delivery</h1>
+                    <strong>Login here</strong>
+                    <hr>
+                </div>
+                <form class="input" [formGroup]="formValue" (ngSubmit)="login()">
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="enter name">Email id</label>
+                            <input type="name" formControlName="email" maxlength="50"
+                                class="form-control" placeholder="Enter E-mail...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="enter name">Password</label>
+                            <input type="name" formControlName="password" maxlength="20"
+                                class="form-control" placeholder="Enter Password...">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a routerLink="/signup">New User? Click here to register</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center head">
+                    <h1>Food Delivery</h1>
+                    <strong>Sign Up here</strong>
+                    <hr>
+                </div>
+                <form class="input" action="" [formGroup]="myForm" (ngSubmit)="signup()">
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="enter name">Name</label>
+                            <input type="name" formControlName="name" maxlength="20"
+                                class="form-control" placeholder="Enter your Name..">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">Mobile Number</label>
+                            <input type="name" formControlName="mobile" maxlength="20"
+                                class="form-control" placeholder="Enter Mobile Number..">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="enter name">Email id</label>
+                            <input type="name" formControlName="email" maxlength="50"
+                                class="form-control" placeholder="Enter E-mail...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="enter name">Password</label>
+                            <input type="name" formControlName="password" maxlength="20"
+                                class="form-control" placeholder="Enter Password...">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <a routerLink="/login">Already Registered? Click here to Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
